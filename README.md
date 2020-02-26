@@ -69,7 +69,7 @@
 - admin(GET)(전체 학생 어드벤티지/패널티 정보 조회)(ADMIN)
 - admin?userId={userId}(특정 학생 어드벤티지/패널티 정보 조회)(ADMIN)
 
-## ERD 
+## ERD (MySQL)
 
 ![image](https://user-images.githubusercontent.com/23696493/75359976-7bc71600-58f8-11ea-90d9-85837445d440.png)
 
@@ -90,3 +90,8 @@
     - 관리자용 어드밴티지 / 패널티 정보 삭제 UI
 
 <div><img width="50%" src="https://user-images.githubusercontent.com/23696493/75369199-5214eb80-5906-11ea-90d8-3f1e8560bdc7.png"></img><img width="50%" src="https://user-images.githubusercontent.com/23696493/75369724-51c92000-5907-11ea-8570-f3d0d4c0fb58.png"</img></div>
+
+## 배포 관련 이슈
+- 기존의 개발 계획대로 PHP 개발 스택으로 프로젝트를 진행하다 보니까, 개발 진행 속도도 느리고 생각보다 학습하는데 시간이 많이 걸려서 기존에 개발하던 Java 기반의 Spring Framework으로 개발을 진행했습니다.
+- 개인적으로 학생 계정으로 아마존 클라우드 서비스를 대부분 무료로 이용하고 있어서, 서버 및 웹 호스팅 자원을 개인 계정을 활용해서 진행하고, 이후에 학과 상황에 맞춰서 Tomcat 서버 호스팅이 가능하다면 새롭게 배포를 할 생각입니다.
+- 앞으로 1년 정도는 개인적으로 패널티 시스템을 현재 배포한 환경에서 사용이 가능해서, 천천히 교수님과 상의후에 학과에서 해당 시스템을 어떤식으로 배포할지 논의하면 될 것 같습니다.
