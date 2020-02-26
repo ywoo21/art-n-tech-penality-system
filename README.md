@@ -2,7 +2,7 @@
 
 
 
-# Elasticsearch 기반 유사 이미지 검색 서비스 Core 서버
+# 아트앤테크놀로지 어드밴티지 & 페널티 시스템
 
 ## 프로젝트에 대해서
 
@@ -89,4 +89,4 @@
     - 관리자용 어드밴티지 / 패널티 정보 수정 UI
     - 관리자용 어드밴티지 / 패널티 정보 삭제 UI
 
-<div><img width="50%" src="https://media.oss.navercorp.com/user/16728/files/ea5ea080-5905-11ea-8e17-3f477c01d097"></img><img width="50%" src="https://media.oss.navercorp.com/user/16728/files/a4a1d800-5905-11ea-9a9a-1ea0e0f89f78"</img></div>
+<div><img width="50%" src="https://user-images.githubusercontent.com/23696493/75369199-5214eb80-5906-11ea-90d8-3f1e8560bdc7.png"></img><img width="50%" src="https://user-images.githubusercontent.com/23696493/75369724-51c92000-5907-11ea-8570-f3d0d4c0fb58.png"</img></div>
