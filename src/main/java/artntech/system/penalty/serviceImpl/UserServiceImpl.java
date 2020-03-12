@@ -43,8 +43,8 @@ public class UserServiceImpl {
      * @return DefaultRes
      */
     public String authUser(final SignInReq signInReq) {
-        if (userRepository.findByEmail(signInReq.getEmail()).isPresent()) {
-            User user = userRepository.findByEmail(signInReq.getEmail()).get();
+        if (userRepository.findByStudentId(signInReq.getStudentId()).isPresent()) {
+            User user = userRepository.findByStudentId(signInReq.getStudentId()).get();
             if (passwordEncoder.matches(signInReq.getPassword(), user.getPassword())) {
                 return new JwtServiceImpl.TokenRes(jwtServiceImpl.create(user.getId())).getToken();
             } else return "";
