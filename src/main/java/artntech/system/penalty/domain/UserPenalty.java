@@ -13,13 +13,13 @@ import java.time.LocalDateTime;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "user_advantage")
-public class UserAdvantage {
+@Table(name = "user_penalty")
+public class UserPenalty {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private int userId;
-    private int advantageId;
+    private int penaltyId;
     private LocalDateTime registeredTime;
 }

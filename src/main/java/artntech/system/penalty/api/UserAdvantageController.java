@@ -1,8 +1,7 @@
 package artntech.system.penalty.api;
 
-import artntech.system.penalty.domain.Advantage;
-import artntech.system.penalty.domain.UserAdvantage;
-import artntech.system.penalty.serviceImpl.AdvantageServiceImpl;
+import artntech.system.penalty.dto.UserAdvantageReq;
+import artntech.system.penalty.dto.UserAdvantageRes;
 import artntech.system.penalty.serviceImpl.UserAdvantageServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -21,12 +20,12 @@ public class UserAdvantageController {
     }
 
     @PostMapping("")
-    public void registerUserAdvantages(@RequestBody List<UserAdvantage> userAdvantageList){
-        userAdvantageServiceImpl.saveUserAdvantages(userAdvantageList);
+    public void registerUserAdvantages(@RequestBody List<UserAdvantageReq> userAdvantageReqList){
+        userAdvantageServiceImpl.saveUserAdvantages(userAdvantageReqList);
     }
 
     @GetMapping("")
-    public List<UserAdvantage> getAllAdvantages(){
+    public List<UserAdvantageRes> getAllAdvantages(){
         return userAdvantageServiceImpl.findAllUserAdvantages();
     }
 }
